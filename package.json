@@ -20,7 +20,7 @@
     "prettier:check": "prettier --check '**/*.{js}'",
     "validate": "run-s lint prettier:check",
     "build": "rollup -c",
-    "prepare": "husky install"
+    "prepare": "npm run build && husky install"
   },
   "repository": {
     "type": "git",
